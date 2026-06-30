@@ -24,7 +24,7 @@
 
 //import java.util.Scanner;
 //
-////               Array Searching
+//                                   Array Searching
 //public class Array{
 //    public static void main(String[] args) {
 //        Scanner input = new Scanner(System.in);
@@ -56,27 +56,27 @@
 
 
                            // Start
-public class Array{
-    public static void main(String[] args){
+//public class Array{
+//    public static void main(String[] args){
 //        int[] myArr = new int[5];
-        int[] myArr = {50, 6, 76, 80, 90};
+//        int[] myArr = {50, 6, 76, 80, 90};
 //        myArr[0] = 50;
 //        myArr[2] = 66;
 //        myArr[3] = 76;
 //        myArr[1] = 80;
 //        myArr[4] = 90;
-        int index = 0;
-        while(index < 5){
-            System.out.println(myArr[index]);
-            index++;
-        }
+//        int index = 0;
+//        while(index < 5){
+//            System.out.println(myArr[index]);
+//            index++;
+//        }
 //        System.out.println(myArr[0]);
 //        System.out.println(myArr[1]);
 //        System.out.println(myArr[2]);
 //        System.out.println(myArr[3]);
 //        System.out.println(myArr[4]);
-    }
-}
+//    }
+//}
 
 
 
@@ -119,6 +119,27 @@ public class Array{
 //}
 
 
+//                       DSA in java (Array)
+
+//Print sum of element of the array
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size:");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.print("Enter the element of the Array:");
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        int sum = 0;
+        for(int i=0;i<n;i++){
+            sum += arr[i];
+        }
+        System.out.print(sum + "");
+    }
+}
 
 
 
