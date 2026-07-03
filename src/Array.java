@@ -122,24 +122,243 @@
 //                       DSA in java (Array)
 
 //Print sum of element of the array
+//import java.util.*;
+//class Main{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter the size:");
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        System.out.print("Enter the element of the Array:");
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int sum = 0;
+//        for(int i=0;i<n;i++){
+//            sum += arr[i];
+//        }
+//        System.out.print(sum + "");
+//    }
+//}
+
+
+
+//Print the Maximum element in the array
+//import java.util.*;
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the size:");
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        System.out.print("Enter the element:");
+//        for(int i= 0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//            }
+//        int max = arr[0];
+//        for(int i =0;i<n;i++){
+//            if(arr[i] > max) {
+//                max = arr[i];
+//            }
+//        }
+//        System.out.print(max);
+//    }
+//}
+
+
+// Multiply odd indexed element by 2 and add 10 to even indexed elements
+//import java.util.*;
+//class Main{
+//    public static void main(String[] args){
+//       int[] arr = {10,20,30,40,50,60};
+//       for(int i=0;i<arr.length;i++){
+//           if(i%2 != 0){
+//               System.out.print(2*arr[i] + " ");
+//           }else{
+//               System.out.print(10 + arr[i] + " ");
+//           }
+//       }
+//    }
+//}
+
+
+// Search in Array
+//import java.util.*;
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int target = sc.nextInt();
+//        boolean found = false;
+//        for(int i=0;i<n;i++) {
+//            if (arr[i] == target) {
+//                found = true;
+//                break;
+//            }
+//        }if(found){
+//            System.out.print("Target is found:");
+//        }else{
+//            System.out.print("Target is not found:");
+//        }
+//    }
+//}
+
+
+import java.util.Scanner;
+
+// Two Sum
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int target = sc.nextInt();
+//        boolean found = false;
+//        for(int i=0;i<n;i++){
+//            for(int j=i+1;j<n;j++){
+//                if(arr[i] + arr[j] == target){
+//                    found = true;
+//                    break;
+//                }
+//            }
+//        }
+//        if (found) {
+//            System.out.println("The number is found ");
+//        }else{
+//            System.out.println("not found");
+//        }
+//    }
+//}
+
+
+//Print the second maximum element in the array
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int max = arr[0];
+//        for(int i=0;i<n;i++){
+//            if(arr[i] > max){
+//                max = arr[i];
+//            }
+//        }
+//        int secMax = arr[0];
+//        for(int i=0;i<n;i++){
+//            if(arr[i] > secMax && arr[i] != max){
+//                secMax = arr[i];
+//            }
+//        }
+//        System.out.println(max);
+//        System.out.println(secMax);
+//    }
+//}
+
+
+// Reverse Array
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int i=0,j=n-1;
+//        while(i<j){
+//            int temp = arr[i];
+//            arr[i] = arr[j];
+//            arr[j] = temp;
+//            i++;
+//            j--;
+//        }
+//        for(int k=0;k<n;k++) {
+//            System.out.print(arr[k] + " ");
+//        }
+//    }
+//}
+
+// second method for reverse array
+//class Array {
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        for(int i=0;i<n/2;i++){
+//            int temp = arr[i];
+//            arr[i] = arr[n-1-i];
+//            arr[n-1-i] = temp;
+//        }
+//        for(int k=0;k<n;k++){
+//            System.out.println(arr[k] + " ");
+//        }
+//    }
+//}
+
+
+
+// Merge two sorted array
 import java.util.*;
-class Main{
+class Array{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the size:");
         int n = sc.nextInt();
         int[] arr = new int[n];
-        System.out.print("Enter the element of the Array:");
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++) {
             arr[i] = sc.nextInt();
         }
-        int sum = 0;
-        for(int i=0;i<n;i++){
-            sum += arr[i];
+        int m = sc.nextInt();
+        int[] arr2 = new int[m];
+        for(int i=0;i<m;i++){
+            arr2[i] = sc.nextInt();
         }
-        System.out.print(sum + "");
+        int[] newArray = merge(arr, arr2);
+        for(int i=0;i<newArray.length;i++){
+            System.out.print(newArray[i] + " ");
+        }
+    }
+    public static int[] merge(int[] arr, int[] arr2){
+        int newSize = arr.length + arr2.length;
+        int[] finalArray = new int[newSize];
+        int i=0,j=0,k=0;
+        while(i<arr.length && j<arr2.length){
+            if(arr[i] < arr2[j]){
+                finalArray[k] = arr[i];
+                i++;
+                k++;
+            }else{
+                finalArray[k] = arr2[j];
+                j++;
+                k++;
+            }
+        }
+        while(i < arr.length){
+            finalArray[k] = arr[i];
+            i++;
+            k++;
+        }
+        while(j < arr2.length){
+            finalArray[k] = arr2[j];
+            j++;
+            k++;
+        }
+        return finalArray;
     }
 }
+
 
 
 
