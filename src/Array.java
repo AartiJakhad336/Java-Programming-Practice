@@ -312,59 +312,132 @@ import java.util.Scanner;
 
 // Merge two sorted array
 import java.util.*;
-class Array{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for(int i=0;i<n;i++) {
-            arr[i] = sc.nextInt();
-        }
-        int m = sc.nextInt();
-        int[] arr2 = new int[m];
-        for(int i=0;i<m;i++){
-            arr2[i] = sc.nextInt();
-        }
-        int[] newArray = merge(arr, arr2);
-        for(int i=0;i<newArray.length;i++){
-            System.out.print(newArray[i] + " ");
-        }
-    }
-    public static int[] merge(int[] arr, int[] arr2){
-        int newSize = arr.length + arr2.length;
-        int[] finalArray = new int[newSize];
-        int i=0,j=0,k=0;
-        while(i<arr.length && j<arr2.length){
-            if(arr[i] < arr2[j]){
-                finalArray[k] = arr[i];
-                i++;
-                k++;
-            }else{
-                finalArray[k] = arr2[j];
-                j++;
-                k++;
-            }
-        }
-        while(i < arr.length){
-            finalArray[k] = arr[i];
-            i++;
-            k++;
-        }
-        while(j < arr2.length){
-            finalArray[k] = arr2[j];
-            j++;
-            k++;
-        }
-        return finalArray;
-    }
-}
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++) {
+//            arr[i] = sc.nextInt();
+//        }
+//        int m = sc.nextInt();
+//        int[] arr2 = new int[m];
+//        for(int i=0;i<m;i++){
+//            arr2[i] = sc.nextInt();
+//        }
+//        int[] newArray = merge(arr, arr2);
+//        for(int i=0;i<newArray.length;i++){
+//            System.out.print(newArray[i] + " ");
+//        }
+//    }
+//    public static int[] merge(int[] arr, int[] arr2){
+//        int newSize = arr.length + arr2.length;
+//        int[] finalArray = new int[newSize];
+//        int i=0,j=0,k=0;
+//        while(i<arr.length && j<arr2.length){
+//            if(arr[i] < arr2[j]){
+//                finalArray[k] = arr[i];
+//                i++;
+//                k++;
+//            }else{
+//                finalArray[k] = arr2[j];
+//                j++;
+//                k++;
+//            }
+//        }
+//        while(i < arr.length){
+//            finalArray[k] = arr[i];
+//            i++;
+//            k++;
+//        }
+//        while(j < arr2.length){
+//            finalArray[k] = arr2[j];
+//            j++;
+//            k++;
+//        }
+//        return finalArray;
+//    }
+//}
 
 
 
+//1.  Write a Program that takes N elements (max. value of N is 100
+//and N is the float number specified by user) from user, stores data
+//in an array and Calculates the average of those numbers.
+
+//import java.util.*;
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        float N = sc.nextFloat();
+//        float[] arr = new float[(int)N];
+//        for(int i=0;i<N;i++){
+//           arr[i] = sc.nextFloat();
+//        }
+//        float sum = 0;
+//        float average = 0;
+//        for(int i=0;i<N;i++){
+//            sum += arr[i];
+//        }
+//        average = (int)sum/N;
+//        System.out.print(average);
+//    }
+//}
 
 
 
+//2. Write a Program that takes n element from user and displays
+// the largest element of an array
+
+//import java.util.*;
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] arr = new int[n];
+//        for(int i=0;i<n;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int max = 0;
+//        for(int i=0;i<n;i++){
+//            max = arr[i];
+//            if(arr[i] > max){
+//                max = arr[i];
+//            }
+//        }
+//        System.out.print("The largest element is " + max);
+//    }
+//}
 
 
 
+//3.  Write a Program that calculates the standard deviation of 10
+//data using arrays
+
+//import java.util.*;
+//class Array{
+//    public static void main(String[] args){
+//        Scanner sc = new Scanner(System.in);
+//        int[] arr = new int[10];
+//        for(int i=0;i<10;i++){
+//            arr[i] = sc.nextInt();
+//        }
+//        int sum = 0;
+//        for(int i=0;i<10;i++){
+//            sum += arr[i];
+//        }
+//        int mean = sum / 10;
+//        double sumOfSquare = 0;
+//        for(int i=0;i<10;i++){
+//            sumOfSquare += (arr[i] - mean) * (arr[i] - mean);
+//        }
+//        double varience = sumOfSquare / 10;
+//        double standardDeviation = (double)Math.sqrt(varience);
+//        System.out.print("The standard deviation of 10 data using arrays is " + standardDeviation);
+//    }
+//}
+
+
+//Write a Program that takes the array of five element and the
+//elements of that array are accessed using pointer.
 
